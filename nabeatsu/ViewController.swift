@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     var number: Int = 0
     @IBOutlet var label: UILabel!
     @IBOutlet var faceLabel: UILabel!
-    @IBOutlet var checkLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = String(0)
@@ -31,7 +30,6 @@ class ViewController: UIViewController {
             var checkNum: Int
             checkNum = number
             while checkNum != 0 {
-                checkLabel.text = String(checkNum)
                 if checkNum % 10 == 3 {
                     checkAho = 3
                     break
